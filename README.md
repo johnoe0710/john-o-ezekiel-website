@@ -7,30 +7,35 @@ Agricultural & Environmental Engineer | Data Analyst.
 **Tagline:** Exploring agricultural and environmental systems through data.
 
 ## Status
-Version 0.1 — Foundation (design tokens, base styles, global header/footer).
+Version 0.1 — Foundation in progress: design tokens, base styles, layout styles, reusable component styles, and an internal design-system reference page.
 
 ## Stack
 - HTML5, CSS3, vanilla JavaScript
 - No framework, no backend, no database
-- Hosted on GitHub Pages (target cost: ₦0)
+- Target deployment: GitHub Pages (cost: ₦0)
 
 ## Structure
 ```
-website/
+root/
 ├── index.html
 ├── about/ | projects/ | research/ | insights/ | expertise/ | cv/ | contact/
 ├── assets/{images,icons,documents}/
-├── css/{tokens,base,layout}.css
+├── css/{tokens,base,layout,components}.css
+├── design-system/
+│   └── index.html
 ├── js/main.js
-└── README.md
+├── README.md
+└── robots.txt
 ```
 
 - `css/tokens.css` — colour system, typography, spacing scale, breakpoints
 - `css/base.css` — reset and base typographic rules
 - `css/layout.css` — header, navigation, footer, responsive layout
+- `css/components.css` — reusable UI patterns and component styling
+- `design-system/index.html` — internal reference page for the approved design system
 
 ## Deployment
-Not yet deployed. Intended deployment: GitHub Pages, no custom domain initially.
+Target deployment: GitHub Pages, no custom domain initially.
 
 ## Outstanding placeholders
 - GitHub profile URL

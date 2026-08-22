@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System | John O. Ezekiel</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <style>
+    body {
+      padding-block: var(--space-8);
+    }
+
+    .ds-container {
+      width: min(100%, var(--container-max));
+      margin-inline: auto;
+      padding-inline: var(--container-padding);
+    }
+
+    .ds-block {
+      margin-bottom: var(--space-9);
+    }
+
+    .swatch {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-3);
+    }
+
+    .swatch__chip {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-border);
+      flex-shrink: 0;
+    }
+
+    .type-row {
+      margin-bottom: var(--space-4);
+    }
+  </style>
+</head>
+<body>
+  <main class="ds-container">
+    <header class="section-header" style="margin-bottom: var(--space-8);">
+      <span class="section-header__eyebrow">Design system</span>
+      <h1>Reference patterns</h1>
+      <p>Internal reference page for the approved John O. Ezekiel visual system. This page is intentionally not part of the public navigation and is excluded from search indexing.</p>
+    </header>
+
+    <section class="ds-block">
+      <h2>Colour system</h2>
+      <div class="swatch"><div class="swatch__chip" style="background:#164A3A"></div><span>Primary — Deep Forest Green #164A3A</span></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#1F2523"></div><span>Secondary — Charcoal #1F2523</span></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#F7F7F2"></div><span>Background — Warm Off-White #F7F7F2</span></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#C59A3D"></div><span>Accent — Muted Gold #C59A3D</span></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#68716D"></div><span>Neutral — Grey #68716D</span></div>
+    </section>
+
+    <section class="ds-block">
+      <h2>Typography</h2>
+      <div class="type-row"><h1 style="margin:0;">H1 — Manrope Bold — 3rem</h1></div>
+      <div class="type-row"><h2 style="margin:0;">H2 — Manrope Semibold — 2.25rem</h2></div>
+      <div class="type-row"><h3 style="margin:0;">H3 — Manrope Semibold — 1.375rem</h3></div>
+      <div class="type-row"><p style="margin:0;">Body — Inter Regular — 1rem. The quick agricultural data system produces evidence-driven insight.</p></div>
+      <div class="type-row"><p style="margin:0; font-size: var(--fs-sm); color: var(--color-text-muted);">Small / metadata — Inter — 0.875rem</p></div>
+    </section>
+
+    <section class="ds-block">
+      <h2>Buttons</h2>
+      <div style="display:flex; gap: var(--space-4); flex-wrap: wrap;">
+        <a class="btn btn--primary" href="#">Primary action</a>
+        <a class="btn btn--secondary" href="#">Secondary action</a>
+      </div>
+    </section>
+
+    <section class="ds-block">
+      <h2>Tags &amp; status</h2>
+      <div style="display:flex; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-4);">
+        <span class="tag">Agriculture</span>
+        <span class="tag">Data Analytics</span>
+        <span class="tag tag--accent">Featured</span>
+      </div>
+      <div style="display:flex; gap: var(--space-5); flex-wrap: wrap;">
+        <span class="status status--ready">Ready</span>
+        <span class="status status--needs-editing">Needs editing</span>
+        <span class="status status--missing">Missing</span>
+      </div>
+    </section>
+
+    <section class="ds-block">
+      <h2>Card</h2>
+      <div class="grid grid--3">
+        <article class="card">
+          <div class="card__media" aria-hidden="true"></div>
+          <div class="card__body">
+            <div class="card__tags">
+              <span class="tag">Food Security</span>
+            </div>
+            <h3 class="card__title"><a href="#">Who Feeds Nigeria?</a></h3>
+            <p class="card__excerpt">A data-driven investigation into Nigeria's agricultural production system.</p>
+            <div class="card__meta">
+              <span>2026</span>
+              <span class="status status--needs-editing">Needs assets</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ds-block">
+      <h2>Stat / KPI card</h2>
+      <div class="grid grid--3">
+        <div class="stat">
+          <span class="stat__value">36</span>
+          <span class="stat__label">States analysed</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ds-block">
+      <h2>Spacing scale</h2>
+      <p style="color: var(--color-text-muted);">4px base — space-1 (4px) through space-9 (96px). All padding, margins, and gaps should use the design token scale rather than ad-hoc pixel values.</p>
+    </section>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>
