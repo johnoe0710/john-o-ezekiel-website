@@ -16,35 +16,7 @@
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a href="./" class="site-header__identity">
-        <span class="site-header__name">John O. Ezekiel</span>
-        <span class="site-header__title">Agricultural &amp; Environmental Engineer | Data Analyst</span>
-      </a>
-
-      <nav class="primary-nav" data-open="false" aria-label="Primary">
-        <ul class="primary-nav__list">
-          <li><a class="primary-nav__link" href="./">Home</a></li>
-          <li><a class="primary-nav__link" href="./about/">About</a></li>
-          <li><a class="primary-nav__link" href="./projects/">Projects</a></li>
-          <li><a class="primary-nav__link" href="./research/">Research</a></li>
-          <li><a class="primary-nav__link" href="./insights/">Insights</a></li>
-          <li><a class="primary-nav__link" href="./expertise/">Expertise</a></li>
-        </ul>
-      </nav>
-
-      <div class="site-header__actions">
-        <a class="btn btn--secondary" href="./cv/">CV</a>
-        <a class="btn btn--primary" href="./contact/">Contact</a>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-          <span class="nav-toggle__bar"></span>
-          <span class="nav-toggle__bar"></span>
-          <span class="nav-toggle__bar"></span>
-        </button>
-      </div>
-    </div>
-  </header>
+  <header class="site-header" data-include="partials/header.html"></header>
 
   <main>
     <div class="container" style="padding-block: var(--space-9);">
@@ -56,42 +28,7 @@
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="site-footer__grid">
-        <div class="site-footer__identity">
-          <span class="site-header__name">John O. Ezekiel</span>
-          <p>Agricultural &amp; Environmental Engineer | Data Analyst<br>
-          Exploring agricultural and environmental systems through data.</p>
-        </div>
-
-        <div class="site-footer__links">
-          <div>
-            <h4>Site</h4>
-            <ul>
-              <li><a href="./projects/">Projects</a></li>
-              <li><a href="./research/">Research</a></li>
-              <li><a href="./insights/">Insights</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Connect</h4>
-            <ul>
-              <li><a href="./cv/">CV</a></li>
-              <li><a href="./contact/">Contact</a></li>
-              <li><a href="#" aria-disabled="true">GitHub [TO BE PROVIDED]</a></li>
-              <li><a href="#" aria-disabled="true">LinkedIn [TO BE PROVIDED]</a></li>
-              <li><a href="mailto:johnoe.office@gmail.com">Email</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="site-footer__bottom">
-        &copy; <span data-current-year></span> John O. Ezekiel. All rights reserved.
-      </div>
-    </div>
-  </footer>
+  <footer class="site-footer" data-include="partials/footer.html"></footer>
 
   <script src="js/main.js"></script>
 </body>
