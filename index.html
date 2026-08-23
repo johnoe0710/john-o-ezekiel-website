@@ -13,19 +13,65 @@
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
 
   <header class="site-header" data-include="partials/header.html"></header>
 
   <main>
-    <div class="container" style="padding-block: var(--space-9);">
-      <h1>Foundation build — Phase 1</h1>
-      <p style="margin-top: var(--space-4); color: var(--color-text-muted);">
-        This page exists to verify the design tokens, base styles, header, footer,
-        and responsive navigation before the homepage content is built in Phase 5.
-      </p>
+    <div class="container hero">
+      <p class="hero__eyebrow">Agriculture | Environment | Data</p>
+      <h1>John O. Ezekiel</h1>
+      <p style="font-size: var(--fs-md); color: var(--color-secondary); margin-top: var(--space-2);">Agricultural &amp; Environmental Engineer | Data Analyst</p>
+      <p class="hero__tagline">Exploring agricultural and environmental systems through data.</p>
+      <div class="hero__labels"><span class="tag">Agriculture</span><span class="tag">Food Security</span><span class="tag">Environment</span><span class="tag">Data Analytics</span></div>
+      <div class="hero__actions"><a class="btn btn--primary" data-route="projects/">Explore My Work</a><a class="btn btn--secondary" data-route="cv/">View CV</a></div>
     </div>
+
+    <section class="container" style="padding-block: var(--space-8);" aria-labelledby="focus-title">
+      <div class="section-header"><span class="section-header__eyebrow">Focus Areas</span><h2 id="focus-title">Where engineering meets data</h2></div>
+      <div class="grid grid--3">
+        <div class="stat"><h3 style="font-size: var(--fs-md);">Agricultural Systems</h3><p class="stat__label">How production, mechanization, and farm-level practice shape output across regions.</p></div>
+        <div class="stat"><h3 style="font-size: var(--fs-md);">Food Security</h3><p class="stat__label">How production, distribution, and access interact to determine reliable food supply.</p></div>
+        <div class="stat"><h3 style="font-size: var(--fs-md);">Environmental Systems</h3><p class="stat__label">How soil, water, and climate conditions constrain and shape agricultural systems.</p></div>
+        <div class="stat"><h3 style="font-size: var(--fs-md);">Soil &amp; Water</h3><p class="stat__label">The resource base underlying agricultural productivity and sustainability.</p></div>
+        <div class="stat"><h3 style="font-size: var(--fs-md);">Data Analytics</h3><p class="stat__label">Turning raw agricultural and environmental data into structured, defensible insight.</p></div>
+        <div class="stat"><h3 style="font-size: var(--fs-md);">Engineering</h3><p class="stat__label">Applying engineering principles to agricultural machinery and process design.</p></div>
+      </div>
+    </section>
+
+    <section class="container" style="padding-block: var(--space-8);" aria-labelledby="featured-title">
+      <div class="section-header"><span class="section-header__eyebrow">Featured Project</span><h2 id="featured-title">Who Feeds Nigeria?</h2><p>A data-driven investigation into Nigeria's agricultural production system.</p></div>
+      <article class="card" style="max-width: 720px;"><div class="card__body">
+        <div class="card__tags"><span class="tag">Food Security</span><span class="tag">Data Analytics</span></div>
+        <h3 class="card__title"><a data-route="projects/">Research questions under investigation</a></h3>
+        <ul style="padding-left: var(--space-5); list-style: disc; color: var(--color-text-muted); font-size: var(--fs-sm); display: flex; flex-direction: column; gap: var(--space-2);"><li>Which geopolitical zone contributes most to Nigeria's food supply?</li><li>Which states are the largest producers?</li><li>Which crops dominate different regions?</li><li>How has agricultural production changed over time?</li><li>What role do imports play?</li></ul>
+        <div class="card__meta"><span>Excel | Power Query | SQL | Power BI</span><span class="status status--needs-editing">In progress</span></div>
+      </div></article>
+    </section>
+
+    <section class="container" style="padding-block: var(--space-8);" aria-labelledby="work-title">
+      <div class="section-header"><span class="section-header__eyebrow">Selected Work</span><h2 id="work-title">Projects</h2></div>
+      <div class="grid grid--2">
+        <article class="card"><div class="card__media"></div><div class="card__body"><div class="card__tags"><span class="tag">Food Security</span><span class="tag">Data Analytics</span></div><h3 class="card__title"><a data-route="projects/">Who Feeds Nigeria?</a></h3><p class="card__excerpt">A data-driven investigation into Nigeria's agricultural production system.</p><div class="card__meta"><span>Excel | Power Query | SQL | Power BI</span><span class="status status--needs-editing">In progress</span></div></div></article>
+        <article class="card"><div class="card__media"></div><div class="card__body"><div class="card__tags"><span class="tag">Engineering</span><span class="tag">Agriculture</span></div><h3 class="card__title"><a data-route="projects/">Cashew Nut Cracking Machine</a></h3><p class="card__excerpt">Final-year Agricultural &amp; Environmental Engineering project in agricultural mechanization.</p><div class="card__meta"><span>Design | Fabrication | Testing</span><span class="status status--needs-editing">Needs assets</span></div></div></article>
+      </div>
+    </section>
+
+    <section class="container" style="padding-block: var(--space-8);" aria-labelledby="services-title">
+      <div class="section-header"><span class="section-header__eyebrow">What I Do</span><h2 id="services-title">Analytical capability</h2></div>
+      <div class="grid grid--3"><div class="stat"><span class="stat__label">Data collection, auditing &amp; cleaning</span></div><div class="stat"><span class="stat__label">Data modelling &amp; SQL analysis</span></div><div class="stat"><span class="stat__label">Dashboard development in Power BI</span></div><div class="stat"><span class="stat__label">Agricultural &amp; environmental systems analysis</span></div><div class="stat"><span class="stat__label">Excel &amp; Power Query workflows</span></div><div class="stat"><span class="stat__label">Python - developing capability</span></div></div>
+    </section>
+
+    <section class="container" style="padding-block: var(--space-8);" aria-labelledby="journey-title">
+      <div class="section-header"><span class="section-header__eyebrow">Professional Journey</span><h2 id="journey-title">From engineering to data</h2></div>
+      <div class="journey"><span class="journey__step">Agricultural &amp; Environmental Engineering</span><span class="journey__arrow" aria-hidden="true">&#8594;</span><span class="journey__step">Engineering foundation</span><span class="journey__arrow" aria-hidden="true">&#8594;</span><span class="journey__step">Agricultural systems understanding</span><span class="journey__arrow" aria-hidden="true">&#8594;</span><span class="journey__step">Data analytics development</span><span class="journey__arrow" aria-hidden="true">&#8594;</span><span class="journey__step">Agricultural data analytics</span><span class="journey__arrow" aria-hidden="true">&#8594;</span><span class="journey__step">Food security and environmental investigation</span><span class="journey__arrow" aria-hidden="true">&#8594;</span><span class="journey__step">Evidence-driven agricultural and environmental analysis</span></div>
+    </section>
+
+    <section class="container" style="padding-block: var(--space-8); max-width: 720px;" aria-labelledby="about-title"><div class="section-header"><span class="section-header__eyebrow">About</span><h2 id="about-title">Engineering foundation, analytical direction</h2><p>I combine agricultural and environmental engineering knowledge with data analytics to investigate complex agricultural, food-security, and environmental systems, and translate data into actionable insight.</p></div><a class="btn btn--secondary" data-route="about/">Read more about my background</a></section>
+
+    <section class="container" style="padding-block: var(--space-8);" aria-labelledby="cta-title"><div class="cta-band"><h2 id="cta-title">Let's talk</h2><p>Open to opportunities and collaboration in agricultural analytics, food security research, and environmental data work.</p><a class="btn btn--primary" data-route="contact/">Get in Touch</a></div></section>
   </main>
 
   <footer class="site-footer" data-include="partials/footer.html"></footer>

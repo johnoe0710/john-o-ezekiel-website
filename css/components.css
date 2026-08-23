@@ -250,3 +250,89 @@
 .text-muted {
   color: var(--color-text-muted);
 }
+
+/* ---- Homepage hero ---- */
+.hero {
+  padding-block: var(--space-9) var(--space-8);
+}
+
+.hero__eyebrow {
+  margin-bottom: var(--space-3);
+  color: var(--color-primary);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero__tagline {
+  max-width: 60ch;
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--fs-lg);
+}
+
+.hero__labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+/* ---- Professional journey ---- */
+.journey {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.journey__step {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  color: var(--color-secondary);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+}
+
+.journey__arrow {
+  color: var(--color-neutral);
+}
+
+@media (max-width: 767px) {
+  .journey {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .journey__arrow {
+    transform: rotate(90deg);
+  }
+}
+
+/* ---- Final call to action ---- */
+.cta-band {
+  padding: var(--space-8) var(--space-7);
+  border-radius: var(--radius-md);
+  background-color: var(--color-secondary);
+  text-align: center;
+}
+
+.cta-band h2,
+.cta-band p {
+  color: var(--color-background);
+}
+
+.cta-band p {
+  max-width: 50ch;
+  margin: var(--space-3) auto var(--space-6);
+}
