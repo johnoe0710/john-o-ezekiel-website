@@ -50,6 +50,8 @@
 }
 
 .primary-nav__link {
+  display: inline-block;
+  padding-block: var(--space-2);
   font-size: var(--fs-sm);
   font-weight: var(--fw-medium);
   color: var(--color-secondary);

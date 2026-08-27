@@ -16,7 +16,7 @@
   font-weight: var(--fw-semibold);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: #7a5f22;
 }
 
 .section-header p {
