@@ -22,13 +22,22 @@
   <header class="site-header" data-include="partials/header.html"></header>
 
   <main>
-    <div class="container" style="padding-block: var(--space-9) var(--space-6); max-width: 760px;">
+    <section class="case-hero">
+      <div class="container case-hero__grid">
+        <div>
       <span class="section-header__eyebrow">Food Security &middot; Data Analytics</span>
       <h1 style="margin-top: var(--space-2);">Nigeria Food Security</h1>
       <p class="hero__tagline" style="margin-top: var(--space-4);">
         An analytical portfolio project investigating Nigeria's agricultural production
         system. Earlier public-facing title: "Who Feeds Nigeria?"
       </p>
+      <div class="case-meta"><span>Excel · Power Query · SQL · SQLite · Power BI</span><span class="status status--ready">Complete</span></div>
+        </div>
+        <figure class="case-hero__media"><img src="assets/screenshots/01_national_overview.png" alt="National Overview dashboard showing Nigeria food-security indicators"></figure>
+      </div>
+    </section>
+
+    <div class="container case-nav-wrap">
 
       <nav aria-label="On this page" style="margin-top: var(--space-6); padding: var(--space-4) var(--space-5); background-color: var(--color-surface-muted); border-radius: var(--radius-sm);">
         <span style="font-size: var(--fs-sm); font-weight: var(--fw-semibold); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-neutral);">On this page</span>
@@ -56,7 +65,31 @@
       </nav>
     </div>
 
-    <div id="overview" class="container" style="padding-block: var(--space-6); max-width: 760px;">
+    <section id="research-question" class="container case-section case-section--highlight">
+      <div class="section-header"><span class="section-header__eyebrow">Research question</span><h2>What shapes food security beyond production?</h2></div>
+      <ul class="question-list">
+        <li>What are the regional contributions to food security in Nigeria?</li>
+        <li>What structural factors drive food-security outcomes across production, trade, and welfare dimensions?</li>
+        <li>How does agricultural production vary by region and crop?</li>
+        <li>How has agricultural production changed over time?</li>
+        <li>What role does import dependency play in food-system resilience and access?</li>
+      </ul>
+    </section>
+
+    <section id="results" class="container case-section">
+      <div class="section-header"><span class="section-header__eyebrow">Evidence snapshot</span><h2>Key findings</h2><p>Verified figures reported by the project across its available source periods.</p></div>
+      <div class="kpi-grid">
+        <div class="stat"><span class="stat__value">77.2 / 100</span><span class="stat__label">Average project-specific composite score, 2010–2023</span></div>
+        <div class="stat"><span class="stat__value">+45%</span><span class="stat__label">National crop production increase, 2010–2022</span></div>
+        <div class="stat"><span class="stat__value">2,520</span><span class="stat__label">kcal/capita/day caloric supply in 2022</span></div>
+        <div class="stat"><span class="stat__value">$9.57B</span><span class="stat__label">Food import bill in 2022</span></div>
+        <div class="stat"><span class="stat__value">18.7%</span><span class="stat__label">Undernourishment in 2022</span></div>
+        <div class="stat"><span class="stat__value">19.9%</span><span class="stat__label">Latest WDI estimate used for 2023</span></div>
+      </div>
+      <p class="evidence-note">The composite score is a project-specific analytical construct, not an official Nigerian or international index.</p>
+    </section>
+
+    <section id="overview" class="container case-section">
       <h2>Overview</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         A self-directed analytical investigation into Nigeria's agricultural production
@@ -65,145 +98,135 @@
         SQL analysis, and dashboard visualization.
       </p>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
-    <div id="problem" class="container" style="padding-block: var(--space-6); max-width: 760px;">
+    <section id="problem" class="container case-section case-section--muted">
       <h2>Problem</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The project examines a structural contradiction in Nigeria's food system: national crop production increased substantially while welfare indicators deteriorated. The analysis tests whether food security can be understood from production alone or whether access, prices, trade exposure, and welfare conditions must be considered together.
       </p>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
-    <div id="research-question" class="container" style="padding-block: var(--space-6); max-width: 760px;">
-      <h2>Research Question</h2>
-      <ul style="margin-top: var(--space-3); padding-left: var(--space-5); list-style: disc; color: var(--color-text-muted); display: flex; flex-direction: column; gap: var(--space-2);">
-        <li>What are the regional contributions to food security in Nigeria?</li>
-        <li>What structural factors drive food-security outcomes across production, trade, and welfare dimensions?</li>
-        <li>How does agricultural production vary by region and crop?</li>
-        <li>How has agricultural production changed over time?</li>
-        <li>What role does import dependency play in food-system resilience and access?</li>
-      </ul>
-      <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
-
-    <div id="objectives" class="container" style="padding-block: var(--space-6); max-width: 760px;">
+    <section id="objectives" class="container case-section">
       <h2>Objectives</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The project investigates regional food-security contributions in Nigeria and examines how production, trade, prices, and welfare indicators interact. It integrates survey, production, trade, price, and macroeconomic data in a single analytical workflow and evaluates the relationship between supply expansion and food-security outcomes.
       </p>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
-    <div id="why-it-matters" class="container" style="padding-block: var(--space-6); max-width: 760px;">
+    <section id="why-it-matters" class="container case-section">
       <h2>Why It Matters</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The project finds that aggregate national crop production increased while undernourishment also rose. This indicates that food security cannot be assessed from production or caloric availability alone; access, prices, trade exposure, distribution, and welfare conditions require equal attention.
       </p>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
-    <div id="data" class="container" style="padding-block: var(--space-6); max-width: 760px;">
+    <section id="data" class="container case-section case-section--muted">
       <h2>Data</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The project combines five major data domains: Nigeria LSMS Wave 4 household and agricultural survey data; FAOSTAT crop production and food-balance data; UN Comtrade bilateral trade data; Nigeria retail food-price data; and World Bank World Development Indicators. The resulting analytical database contains 15 documented tables, including dimensions, fact tables, and staging tables.
       </p>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
-    <div id="data-sources" class="container" style="padding-block: var(--space-6); max-width: 760px;">
+    <section id="data-sources" class="container case-section">
       <h2>Data Sources</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The project uses source data from Nigeria LSMS Wave 4, FAOSTAT, UN Comtrade, Nigeria National Bureau of Statistics retail food-price data, and World Bank WDI. The repository documentation notes that different datasets cover different periods and that the source data are not bundled in the public repository.
       </p>
+      <div class="source-grid">
+        <div class="source-item"><strong>Nigeria LSMS Wave 4</strong><span>Household and agricultural survey data</span></div>
+        <div class="source-item"><strong>FAOSTAT</strong><span>Crop production and food-balance data</span></div>
+        <div class="source-item"><strong>UN Comtrade</strong><span>Bilateral trade data</span></div>
+        <div class="source-item"><strong>Nigeria retail food-price data</strong><span>National Bureau of Statistics price data</span></div>
+        <div class="source-item"><strong>World Bank WDI</strong><span>Development and welfare indicators</span></div>
+      </div>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
-    <div id="data-preparation" class="container" style="padding-block: var(--space-6); max-width: 760px;">
+    <section id="data-preparation" class="container case-section case-section--muted">
       <h2>Data Preparation</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The analytical workflow includes source auditing, file-structure checks, standardisation of column names and state names, handling missing values and duplicates, outlier flagging, crop identifier harmonisation, date/year normalisation, and staging of cleaned outputs as CSV files before loading into SQLite. The methodology describes this as a standardised pipeline supporting 17 analytical queries and a seven-page Power BI dashboard.
       </p>
+      <div class="workflow" aria-label="Analytical workflow"><span>Source data</span><b aria-hidden="true">→</b><span>Cleaning &amp; standardisation</span><b aria-hidden="true">→</b><span>Staging</span><b aria-hidden="true">→</b><span>SQLite database</span><b aria-hidden="true">→</b><span>SQL analytics</span><b aria-hidden="true">→</b><span>Power BI</span><b aria-hidden="true">→</b><span>Executive reporting</span></div>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
-    <div id="methodology" class="container" style="padding-block: var(--space-6); max-width: 760px;">
+    <section id="methodology" class="container case-section">
       <h2>Methodology</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The project follows a documented end-to-end pipeline: raw data, cleaning and standardisation, staging, SQLite database, analytical SQL, Power BI dashboard, and executive reporting. The composite food-security score is a 0–100 project-specific analytical construct using three pillars: availability (40%), self-sufficiency (30%), and welfare (30%). It is explicitly not an official Nigerian or international food-security index.
       </p>
+      <div class="method-grid"><div><h3>Standardisation</h3><p>Column names, state names, crop identifiers, dates, and years were harmonised before loading.</p></div><div><h3>Analytical model</h3><p>The score uses availability (40%), self-sufficiency (30%), and welfare (30%) pillars.</p></div><div><h3>Reporting layer</h3><p>Seventeen analytical queries support a seven-page Power BI dashboard and executive reporting.</p></div></div>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
-    <div id="analysis" class="container" style="padding-block: var(--space-6); max-width: 760px;">
+    <section id="analysis" class="container case-section case-section--muted">
       <h2>Analysis</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The repository contains 17 analytical SQL queries covering household crop adoption, state and regional production, national production trends, crop yield trajectories, food supply versus minimum requirements, import dependency, trade sourcing, food prices and inflation, yield gaps, input-use intensity, and composite food-security scoring. The Power BI dashboard is organised into seven pages: National Overview, Regional Production Analysis, Crop Analysis, Import Dependence, Trade Sourcing, Food Prices &amp; Access, and Food Security Summary.
       </p>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
-    <div id="results" class="container" style="padding-block: var(--space-6); max-width: 760px;">
+    <section id="results-detail" class="container case-section">
       <h2>Results</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The project reports a composite food-security score average of 77.2/100 across 2010–2023, noting a declining trend after 2019. National crop production rose by approximately 45%, from 160 million tonnes in 2010 to 232 million tonnes in 2022. Caloric supply reached 2,520 kcal/capita/day in 2022, while undernourishment rose from 10.4% in 2010 to 18.7% in 2022, with the latest WDI estimate used for 2023 at 19.9%. Maize was the leading crop by household adoption, with more than 69,000 survey households, and Kano was the leading state in survey harvest volume at approximately 22 million kg. The food import bill reached USD 9.57 billion in 2022.
       </p>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
-    <div id="dashboard" class="container" style="padding-block: var(--space-6); max-width: 760px;">
+    <section id="dashboard" class="container case-section case-section--muted">
       <h2>Dashboard / Visualizations</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The project includes a seven-page Power BI dashboard covering national food security, regional production, crop analysis, import dependence, trade sourcing, food prices and access, and the food-security summary. Screenshots are available in the project repository: <a href="https://github.com/johnoe0710/nigeria-food-security-analytics/tree/main/power-bi/screenshots">GitHub screenshots folder</a>.
       </p>
-      <div class="grid grid--2" style="margin-top: var(--space-6);">
-        <figure>
-          <img src="assets/screenshots/01_national_overview.png" alt="Nigeria Food Security National Overview dashboard" style="width: 100%; height: auto;">
-          <figcaption style="margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--fs-sm);">National Overview</figcaption>
+      <div class="grid grid--2 dashboard-gallery">
+        <figure class="dashboard-figure">
+          <img src="assets/screenshots/01_national_overview.png" alt="Nigeria Food Security National Overview dashboard"><figcaption>National Overview</figcaption>
         </figure>
-        <figure>
-          <img src="assets/screenshots/02_regional_production_analysis.png" alt="Nigeria Food Security Regional Production Analysis dashboard" style="width: 100%; height: auto;">
-          <figcaption style="margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--fs-sm);">Regional Production Analysis</figcaption>
+        <figure class="dashboard-figure">
+          <img src="assets/screenshots/02_regional_production_analysis.png" alt="Nigeria Food Security Regional Production Analysis dashboard"><figcaption>Regional Production Analysis</figcaption>
         </figure>
-        <figure>
-          <img src="assets/screenshots/03_crop_analysis.png" alt="Nigeria Food Security Crop Analysis dashboard" style="width: 100%; height: auto;">
-          <figcaption style="margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--fs-sm);">Crop Analysis</figcaption>
+        <figure class="dashboard-figure">
+          <img src="assets/screenshots/03_crop_analysis.png" alt="Nigeria Food Security Crop Analysis dashboard"><figcaption>Crop Analysis</figcaption>
         </figure>
-        <figure>
-          <img src="assets/screenshots/04_import_dependence.png" alt="Nigeria Food Security Import Dependence dashboard" style="width: 100%; height: auto;">
-          <figcaption style="margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--fs-sm);">Import Dependence</figcaption>
+        <figure class="dashboard-figure">
+          <img src="assets/screenshots/04_import_dependence.png" alt="Nigeria Food Security Import Dependence dashboard"><figcaption>Import Dependence</figcaption>
         </figure>
-        <figure>
-          <img src="assets/screenshots/05_trade_sourcing.png" alt="Nigeria Food Security Trade Sourcing dashboard" style="width: 100%; height: auto;">
-          <figcaption style="margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--fs-sm);">Trade Sourcing</figcaption>
+        <figure class="dashboard-figure">
+          <img src="assets/screenshots/05_trade_sourcing.png" alt="Nigeria Food Security Trade Sourcing dashboard"><figcaption>Trade Sourcing</figcaption>
         </figure>
-        <figure>
-          <img src="assets/screenshots/06_food_prices_and_access.png" alt="Nigeria Food Security Food Prices and Access dashboard" style="width: 100%; height: auto;">
-          <figcaption style="margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--fs-sm);">Food Prices &amp; Access</figcaption>
+        <figure class="dashboard-figure">
+          <img src="assets/screenshots/06_food_prices_and_access.png" alt="Nigeria Food Security Food Prices and Access dashboard"><figcaption>Food Prices &amp; Access</figcaption>
         </figure>
-        <figure>
-          <img src="assets/screenshots/07_food_security_summary.png" alt="Nigeria Food Security Food Security Summary dashboard" style="width: 100%; height: auto;">
-          <figcaption style="margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--fs-sm);">Food Security Summary</figcaption>
+        <figure class="dashboard-figure">
+          <img src="assets/screenshots/07_food_security_summary.png" alt="Nigeria Food Security Food Security Summary dashboard"><figcaption>Food Security Summary</figcaption>
         </figure>
       </div>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
-    <div id="interpretation" class="container" style="padding-block: var(--space-6); max-width: 760px;">
-      <h2>Interpretation</h2>
+    <section id="interpretation" class="container case-section case-section--paradox">
+      <span class="section-header__eyebrow">Central conclusion</span><h2>Rising production does not automatically translate into improved food security.</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The project interprets the evidence as a food-security paradox: aggregate production and caloric availability increased while undernourishment worsened. This points to the importance of economic access, prices, trade exposure, distribution, and welfare conditions rather than production alone. The project explicitly distinguishes this descriptive interpretation from causal inference.
       </p>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
-    <div id="limitations" class="container" style="padding-block: var(--space-6); max-width: 760px;">
+    <section id="limitations" class="container case-section case-section--muted">
       <h2>Limitations</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The project documents several important limitations: LSMS evidence is from the 2018–2019 wave and should not be treated as an annual production time series; different datasets cover different periods; UN Comtrade net_weight_kg was zero for all 3,997 Nigerian import records examined, so trade value was used instead; CPI base-year changes limit direct comparison of absolute index levels across distant periods; and the composite score is a project-specific analytic construct, not an official benchmark or index. The analysis is primarily descriptive and should not automatically be interpreted as causal evidence.
       </p>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
 
     <div id="recommendations" class="container" style="padding-block: var(--space-6); max-width: 760px;">
       <h2>Recommendations</h2>
@@ -243,13 +266,19 @@
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
     </div>
 
-    <div id="next-steps" class="container" style="padding-block: var(--space-6) var(--space-9); max-width: 760px;">
+    <section id="next-steps" class="container case-section">
       <h2>Next Steps</h2>
       <p style="margin-top: var(--space-3); color: var(--color-text-muted);">
         The repository points to further analytical and policy attention around market infrastructure, post-harvest loss reduction, targeted social protection, and strategic import substitution for commodities with high import dependence, particularly wheat and sugar. The project also recognises the need for source validation and careful interpretation of data with different temporal coverage and methodological constraints.
       </p>
       <span class="status status--ready" style="margin-top: var(--space-3); display: inline-flex;">Complete</span>
-    </div>
+    </section>
+
+    <section class="container case-section case-conclusion" aria-labelledby="conclusion-title">
+      <span class="section-header__eyebrow">Conclusion</span>
+      <h2 id="conclusion-title">Food-system performance must be read across production, access, trade, prices, and welfare.</h2>
+      <p>The project presents a descriptive analytical framework for examining that relationship without treating production growth as proof of improved food security.</p>
+    </section>
   </main>
 
   <footer class="site-footer" data-include="partials/footer.html"></footer>

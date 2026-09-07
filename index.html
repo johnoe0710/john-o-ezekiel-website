@@ -25,7 +25,7 @@
   <header class="site-header" data-include="partials/header.html"></header>
 
   <main>
-    <div class="container hero">
+    <div class="container hero hero--home">
       <p class="hero__eyebrow">Agriculture × Environment × Data</p>
       <h1>John O. Ezekiel</h1>
       <p style="font-size: var(--fs-md); color: var(--color-secondary); margin-top: var(--space-2);">Agricultural &amp; Environmental Engineer | Data Analyst</p>
@@ -46,22 +46,21 @@
       </div>
     </section>
 
-    <section class="container" style="padding-block: var(--space-8);" aria-labelledby="featured-title">
-      <div class="section-header"><span class="section-header__eyebrow">Featured Project</span><h2 id="featured-title">Nigeria Food Security</h2><p>An analytical portfolio project investigating Nigeria's agricultural production system. Earlier public-facing title: "Who Feeds Nigeria?"</p></div>
-      <article class="card" style="max-width: 720px;"><div class="card__body">
-        <div class="card__tags"><span class="tag">Food Security</span><span class="tag">Data Analytics</span></div>
-        <h3 class="card__title"><a data-route="projects/">Research questions investigated</a></h3>
-        <ul style="padding-left: var(--space-5); list-style: disc; color: var(--color-text-muted); font-size: var(--fs-sm); display: flex; flex-direction: column; gap: var(--space-2);"><li>Regional contribution to Nigeria's food security</li><li>Agricultural production by region</li><li>Crop performance and commodity-level analysis</li><li>Agricultural production trends over time</li><li>Import dependency</li></ul>
-        <div class="card__meta"><span>Excel · Power Query · SQL · SQLite · Power BI</span><span class="status status--ready">Complete</span></div>
-        <a href="https://github.com/johnoe0710/nigeria-food-security-analytics" style="font-size: var(--fs-sm);">GitHub repository →</a>
-      </div></article>
+    <section class="section-band section-band--featured" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-header"><span class="section-header__eyebrow">Featured Project</span><h2 id="featured-title">Nigeria Food Security</h2><p>An end-to-end analytical investigation of production, trade, prices, and welfare in Nigeria.</p></div>
+        <article class="card project-card project-card--featured">
+          <div class="card__media"><img src="projects/nigeria-food-security/assets/screenshots/01_national_overview.png" alt="National Overview dashboard for the Nigeria Food Security analytics project"></div>
+          <div class="card__body"><div class="card__tags"><span class="tag">Food Security</span><span class="tag">Data Analytics</span></div><h3 class="card__title"><a data-route="projects/nigeria-food-security/">From production data to executive reporting</a></h3><p class="card__excerpt">A visual case study combining five data domains, analytical SQL, SQLite, and a seven-page Power BI dashboard.</p><div class="card__meta"><span>Excel · SQL · SQLite · Power BI</span><span class="status status--ready">Complete</span></div><a class="project-card__cta" data-route="projects/nigeria-food-security/">View case study <span aria-hidden="true">→</span></a><a class="project-card__repo" href="https://github.com/johnoe0710/nigeria-food-security-analytics">GitHub repository</a></div>
+        </article>
+      </div>
     </section>
 
-    <section class="container" style="padding-block: var(--space-8);" aria-labelledby="work-title">
+    <section class="container section-space" aria-labelledby="work-title">
       <div class="section-header"><span class="section-header__eyebrow">Selected Work</span><h2 id="work-title">Projects</h2></div>
-      <div class="grid grid--2">
-        <article class="card"><div class="card__media"><img src="projects/nigeria-food-security/assets/screenshots/01_national_overview.png" alt="National Overview dashboard for the Nigeria Food Security analytics project" style="width: 100%; height: 100%; object-fit: cover;"></div><div class="card__body"><div class="card__tags"><span class="tag">Food Security</span><span class="tag">Data Analytics</span></div><h3 class="card__title"><a data-route="projects/">Nigeria Food Security</a></h3><p class="card__excerpt">An analytical portfolio project investigating Nigeria's agricultural production system. Earlier public-facing title: "Who Feeds Nigeria?"</p><div class="card__meta"><span>Excel · Power Query · SQL · SQLite · Power BI</span><span class="status status--ready">Complete</span></div></div></article>
-        <article class="card"><div class="card__media"><img src="projects/cashew-nut-cracking-machine/assets/working_process_fabricated_machine.png" alt="Fabricated cashew nut cracking machine" style="width: 100%; height: 100%; object-fit: cover;"></div><div class="card__body"><div class="card__tags"><span class="tag">Engineering</span><span class="tag">Agriculture</span></div><h3 class="card__title"><a data-route="projects/">Cashew Nut Cracking Machine</a></h3><p class="card__excerpt">Final-year engineering project (3-person team). Individual contribution: structural design.</p><div class="card__meta"><span>Structural Design</span><span class="status status--ready">Complete</span></div></div></article>
+      <div class="grid grid--2 project-grid">
+        <article class="card project-card"><div class="card__media"><img src="projects/nigeria-food-security/assets/screenshots/01_national_overview.png" alt="National Overview dashboard for the Nigeria Food Security analytics project"></div><div class="card__body"><div class="card__tags"><span class="tag">Food Security</span><span class="tag">Data Analytics</span></div><h3 class="card__title"><a data-route="projects/nigeria-food-security/">Nigeria Food Security</a></h3><p class="card__excerpt">A visual analysis of production, trade, prices, and welfare across Nigeria's food system.</p><div class="card__meta"><span>Excel · SQL · Power BI</span><span class="status status--ready">Complete</span></div><a class="project-card__cta" data-route="projects/nigeria-food-security/">View project <span aria-hidden="true">→</span></a></div></article>
+        <article class="card project-card"><div class="card__media"><img src="projects/cashew-nut-cracking-machine/assets/working_process_fabricated_machine.png" alt="Fabricated cashew nut cracking machine"></div><div class="card__body"><div class="card__tags"><span class="tag">Engineering</span><span class="tag">Agriculture</span></div><h3 class="card__title"><a data-route="projects/cashew-nut-cracking-machine/">Cashew Nut Cracking Machine</a></h3><p class="card__excerpt">A final-year engineering project focused on structural design within a three-person team.</p><div class="card__meta"><span>Structural Design</span><span class="status status--ready">Complete</span></div><a class="project-card__cta" data-route="projects/cashew-nut-cracking-machine/">View project <span aria-hidden="true">→</span></a></div></article>
       </div>
     </section>
 
