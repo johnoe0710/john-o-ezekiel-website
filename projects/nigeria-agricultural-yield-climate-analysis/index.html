@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigeria Agricultural Yield &amp; Climate Analysis | John O. Ezekiel</title>
+  <meta name="description" content="A Power BI analysis of Nigeria's national crop production and yield trends alongside a central-region rainfall proxy.">
+  <link rel="canonical" href="https://johnoe0710.github.io/john-o-ezekiel-website/projects/nigeria-agricultural-yield-climate-analysis/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/tokens.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+  <header class="site-header" data-include="partials/header.html"></header>
+  <main>
+    <section class="case-hero"><div class="container case-hero__grid">
+      <div><span class="section-header__eyebrow">Nigeria · Agriculture · Climate</span><h1 style="margin-top: var(--space-2);">Nigeria Agricultural Yield &amp; Climate Analysis</h1>
+        <p class="hero__tagline">A Power BI analysis of national crop production, harvested area, and yield trends alongside a regional rainfall proxy for 2000–2024.</p>
+        <div class="case-meta"><span>Power BI · Power Query · DAX · Python audit</span><span>National crop data · Regional climate proxy</span></div>
+        <a class="btn btn--primary" href="https://github.com/johnoe0710/nigeria-agricultural-yield-climate-analysis" target="_blank" rel="noopener">Open GitHub project</a></div>
+      <figure class="case-hero__media"><img src="https://raw.githubusercontent.com/johnoe0710/nigeria-agricultural-yield-climate-analysis/main/05_images/01-dashboard-overview.png" alt="Overview of the Nigeria crop yield and climate Power BI dashboard"></figure>
+    </div></section>
+    <div class="container case-nav-wrap"><nav aria-label="On this page" class="case-nav" style="margin-top: var(--space-6); padding: var(--space-4) var(--space-5); border-radius: var(--radius-sm);"><ul style="display: flex; flex-wrap: wrap; gap: var(--space-4); font-size: var(--fs-sm);"><li><a href="#overview">Overview</a></li><li><a href="#data">Data</a></li><li><a href="#approach">Approach</a></li><li><a href="#findings">Findings</a></li><li><a href="#visuals">Visuals</a></li><li><a href="#limits">Limitations</a></li></ul></nav></div>
+    <section id="overview" class="container case-section"><h2>Context &amp; objective</h2><p style="margin-top: var(--space-3);">This project describes changes in Nigeria's national crop production, area harvested, and yield and compares them with a rainfall proxy. Its objective is to demonstrate a full data workflow while keeping the distinction between national agriculture statistics and partial climate coverage visible.</p></section>
+    <section id="data" class="container case-section case-section--muted"><h2>Data context</h2><p style="margin-top: var(--space-3);">FAOSTAT provides national crop production, area harvested, and yield records for 2000–2024. NASA POWER precipitation is aggregated from a 143-cell grid over central Nigeria, so it is a regional proxy rather than country-wide rainfall. The source repository documents attribution and licenses; this website does not redistribute either dataset.</p></section>
+    <section id="approach" class="container case-section"><h2>Analytical approach</h2><p style="margin-top: var(--space-3);">The workflow uses Power Query to prepare sources, a Power BI model and DAX measures to report trends, and an independent Python calculation for the blended yield-rainfall correlation. The report compares national production trends with the narrower rainfall coverage and documents the mismatch in geographic scope.</p></section>
+    <section id="findings" class="container case-section case-section--muted"><div class="section-header"><span class="section-header__eyebrow">Reported results</span><h2>National trends and climate association</h2></div><div class="kpi-grid"><div class="stat"><span class="stat__value">3.82B t</span><span class="stat__label">Reported total production, 2000–2024</span></div><div class="stat"><span class="stat__value">60.35M ha</span><span class="stat__label">Peak land footprint, 2024</span></div><div class="stat"><span class="stat__value">r = 0.34</span><span class="stat__label">Blended yield-rainfall correlation across 25 years</span></div></div><p style="margin-top: var(--space-4);">The project reports average yield growth of 10.0% from 2000 to 2021. The correlation is descriptive and does not control for other factors or establish causation.</p></section>
+    <section id="visuals" class="container case-section"><div class="section-header"><span class="section-header__eyebrow">Power BI report</span><h2>Dashboard and model views</h2></div><div class="grid grid--2 dashboard-gallery"><figure class="dashboard-figure"><img src="https://raw.githubusercontent.com/johnoe0710/nigeria-agricultural-yield-climate-analysis/main/05_images/02-yield-trend-analysis.png" alt="Nigeria crop yield trend analysis"><figcaption>Yield trend analysis</figcaption></figure><figure class="dashboard-figure"><img src="https://raw.githubusercontent.com/johnoe0710/nigeria-agricultural-yield-climate-analysis/main/05_images/03-rainfall-correlation.png" alt="Correlation view comparing yield and the regional rainfall proxy"><figcaption>Yield and rainfall proxy</figcaption></figure></div></section>
+    <section id="limits" class="container case-section case-section--muted"><h2>Limitations &amp; availability</h2><p style="margin-top: var(--space-3);">Crop statistics are national, but rainfall represents only a central band of Nigeria and cannot be described as country-wide climate coverage. There is no state-level breakdown or trade/import analysis. The reported correlation is not causal and has no significance testing or controls. Data source and attribution detail is maintained in the project repository.</p></section>
+    <section class="container case-section"><h2>Project repository</h2><p style="margin-top: var(--space-3);">The independent repository contains the Power BI project, source documentation, analysis notes, and published screenshots.</p><p style="margin-top: var(--space-4);"><a class="btn btn--primary" href="https://github.com/johnoe0710/nigeria-agricultural-yield-climate-analysis" target="_blank" rel="noopener">View project on GitHub</a> <a class="btn btn--secondary" data-route="projects/">Back to all projects</a></p></section>
+  </main>
+  <footer class="site-footer" data-include="partials/footer.html"></footer>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

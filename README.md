@@ -37,6 +37,9 @@ root/
 ## Deployment
 Target deployment: GitHub Pages, no custom domain initially.
 
+## Portfolio projects
+The `projects/` area contains the project index and individual case-study pages. Six agricultural and environmental analytics projects link to their independent GitHub repositories; screenshots are embedded from those repositories. Project datasets and complete source repositories are not copied into this website.
+
 ## Outstanding placeholders
 - GitHub profile URL
 - LinkedIn profile URL

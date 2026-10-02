@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soil Nutrient Analytics | John O. Ezekiel</title>
+  <meta name="description" content="An exploratory Excel dashboard and data audit of soil nutrients, moisture, and fertilizer labels.">
+  <link rel="canonical" href="https://johnoe0710.github.io/john-o-ezekiel-website/projects/soil-nutrient-analytics/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/tokens.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+  <header class="site-header" data-include="partials/header.html"></header>
+  <main>
+    <section class="case-hero"><div class="container case-hero__grid">
+      <div><span class="section-header__eyebrow">Soil · Data quality · Excel</span><h1 style="margin-top: var(--space-2);">Soil Nutrient Analytics</h1>
+        <p class="hero__tagline">An exploratory analysis and data audit of soil nutrients, moisture, temperature, and fertilizer labels, built to distinguish descriptive summaries from unsupported agronomic recommendations.</p>
+        <div class="case-meta"><span>Excel · Power Query · Power Pivot · DAX · Python audit</span><span>8,000 records</span></div>
+        <a class="btn btn--primary" href="https://github.com/johnoe0710/soil-nutrient-analytics" target="_blank" rel="noopener">Open GitHub project</a></div>
+      <figure class="case-hero__media"><img src="https://raw.githubusercontent.com/johnoe0710/soil-nutrient-analytics/main/docs/images/dashboard_overview.png" alt="Overview of the soil nutrient and moisture dashboard"></figure>
+    </div></section>
+    <div class="container case-nav-wrap"><nav aria-label="On this page" class="case-nav" style="margin-top: var(--space-6); padding: var(--space-4) var(--space-5); border-radius: var(--radius-sm);"><ul style="display: flex; flex-wrap: wrap; gap: var(--space-4); font-size: var(--fs-sm);"><li><a href="#overview">Overview</a></li><li><a href="#data">Data</a></li><li><a href="#approach">Approach</a></li><li><a href="#findings">Audit findings</a></li><li><a href="#visuals">Visuals</a></li><li><a href="#limits">Limitations</a></li></ul></nav></div>
+    <section id="overview" class="container case-section"><h2>Context &amp; objective</h2><p style="margin-top: var(--space-3);">The project examines nutrient and soil-condition records alongside a supplied fertilizer-name label. The goal is to describe the data and test whether the label is supported by the recorded soil variables, not to recommend fertilizer application.</p></section>
+    <section id="data" class="container case-section case-section--muted"><h2>Data context</h2><p style="margin-top: var(--space-3);">The project uses 8,000 rows covering nitrogen, phosphorus, potassium, temperature, humidity, soil moisture, soil type, crop type, and fertilizer label. The repository identifies the Kaggle “Crop and Soil DataSet” and its listed MIT license, but the collection or generation method is not explained. The website does not host a copy of the data.</p></section>
+    <section id="approach" class="container case-section"><h2>Analytical approach</h2><p style="margin-top: var(--space-3);">Power Query cleans and derives fields for totals, potassium-zero flags, and a temperature-to-moisture ratio; DAX measures and PivotTables feed an interactive Excel dashboard. Separate Python checks reproduce statistics and test the fertilizer label against the soil variables.</p></section>
+    <section id="findings" class="container case-section case-section--muted"><div class="section-header"><span class="section-header__eyebrow">Data audit</span><h2>What the tests support</h2></div><div class="kpi-grid"><div class="stat"><span class="stat__value">8,000</span><span class="stat__label">Rows audited; no missing or duplicate rows reported</span></div><div class="stat"><span class="stat__value">14.9%</span><span class="stat__label">Fertilizer-label prediction accuracy on rows 100–8,000</span></div><div class="stat"><span class="stat__value">14.3%</span><span class="stat__label">Seven-class chance baseline</span></div></div><p style="margin-top: var(--space-4);">For most of the file, the label prediction test is close to chance. The project concludes that fertilizer recommendations from this dataset are unsupported. Potassium recorded as zero is treated as a dataset flag, not a laboratory deficiency threshold.</p></section>
+    <section id="visuals" class="container case-section"><div class="section-header"><span class="section-header__eyebrow">Dashboard &amp; audit</span><h2>Selected views</h2></div><div class="grid grid--2 dashboard-gallery"><figure class="dashboard-figure"><img src="https://raw.githubusercontent.com/johnoe0710/soil-nutrient-analytics/main/docs/images/dashboard_filtered_sandy.png" alt="Dashboard filtered to sandy soil"><figcaption>Dashboard filtered to sandy soil</figcaption></figure><figure class="dashboard-figure"><img src="https://raw.githubusercontent.com/johnoe0710/soil-nutrient-analytics/main/docs/images/fertilizer_label_signal_check.png" alt="Audit plot comparing fertilizer-label signal across data subsets"><figcaption>Fertilizer-label signal audit</figcaption></figure></div></section>
+    <section id="limits" class="container case-section case-section--muted"><h2>Limitations &amp; availability</h2><p style="margin-top: var(--space-3);">The data source does not explain collection or generation. Nutrient units are unverified, there is no yield or crop-response outcome, and most fertilizer labels show no useful signal in this file. Do not use the dashboard to select or apply fertilizer. Source data remains in the separate project repository.</p></section>
+    <section class="container case-section"><h2>Project repository</h2><p style="margin-top: var(--space-3);">The repository includes the workbook, audit code, documentation, source attribution, and screenshots.</p><p style="margin-top: var(--space-4);"><a class="btn btn--primary" href="https://github.com/johnoe0710/soil-nutrient-analytics" target="_blank" rel="noopener">View project on GitHub</a> <a class="btn btn--secondary" data-route="projects/">Back to all projects</a></p></section>
+  </main>
+  <footer class="site-footer" data-include="partials/footer.html"></footer>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

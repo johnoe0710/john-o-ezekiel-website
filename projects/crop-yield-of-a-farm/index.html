@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Yield of a Farm | John O. Ezekiel</title>
+  <meta name="description" content="An Excel dashboard exploring farm size, rainfall, soil quality, fertilizer, and crop output in a synthetic dataset.">
+  <link rel="canonical" href="https://johnoe0710.github.io/john-o-ezekiel-website/projects/crop-yield-of-a-farm/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/tokens.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+  <header class="site-header" data-include="partials/header.html"></header>
+  <main>
+    <section class="case-hero"><div class="container case-hero__grid">
+      <div><span class="section-header__eyebrow">Farm systems · Excel · Synthetic data</span><h1 style="margin-top: var(--space-2);">Crop Yield of a Farm</h1>
+        <p class="hero__tagline">An Excel dashboard comparing production, land area, and yield rates across simulated farm records and environmental groupings.</p>
+        <div class="case-meta"><span>Excel · Power Query · PivotTables</span><span>3,000 simulated farm records</span></div>
+        <a class="btn btn--primary" href="https://github.com/johnoe0710/crop-yield-of-a-farm" target="_blank" rel="noopener">Open GitHub project</a></div>
+      <figure class="case-hero__media"><img src="https://raw.githubusercontent.com/johnoe0710/crop-yield-of-a-farm/main/images/dashboard-overview.png" alt="Overview of the farm yield and environmental performance dashboard"></figure>
+    </div></section>
+    <div class="container case-nav-wrap"><nav aria-label="On this page" class="case-nav" style="margin-top: var(--space-6); padding: var(--space-4) var(--space-5); border-radius: var(--radius-sm);"><ul style="display: flex; flex-wrap: wrap; gap: var(--space-4); font-size: var(--fs-sm);"><li><a href="#overview">Overview</a></li><li><a href="#data">Data</a></li><li><a href="#approach">Approach</a></li><li><a href="#findings">Findings</a></li><li><a href="#visuals">Visuals</a></li><li><a href="#limits">Limitations</a></li></ul></nav></div>
+    <section id="overview" class="container case-section"><h2>Context &amp; objective</h2><p style="margin-top: var(--space-3);">This project organises simulated farm and environmental features into a dashboard for comparing output and derived yield rates across farm-scale, soil-quality, and rainfall groups. It is an exploratory description of the generated records, not evidence about real farms.</p></section>
+    <section id="data" class="container case-section case-section--muted"><h2>Data context</h2><p style="margin-top: var(--space-3);">The dataset contains 3,000 simulated records with rainfall, soil-quality index, farm size, sunlight, fertilizer, and crop-yield fields. It has no location, date, or crop-type field. The source description calls crop_yield tons per hectare, but the project treats it as total farm output and derives a per-hectare rate; that interpretation is an unverified assumption. This website does not host the dataset.</p></section>
+    <section id="approach" class="container case-section"><h2>Analytical approach</h2><p style="margin-top: var(--space-3);">Power Query loads and checks the records. Derived fields group farms by scale, soil tier, and rainfall zone; PivotTables and a dashboard compare totals and averages. A separate correlation check compares farm size with gross output.</p></section>
+    <section id="findings" class="container case-section case-section--muted"><div class="section-header"><span class="section-header__eyebrow">Dataset-level results</span><h2>What the dashboard reports</h2></div><div class="kpi-grid"><div class="stat"><span class="stat__value">984,297 t</span><span class="stat__label">Total gross output reported</span></div><div class="stat"><span class="stat__value">0.66 t/ha</span><span class="stat__label">Weighted output rate</span></div><div class="stat"><span class="stat__value">0.989</span><span class="stat__label">Correlation of farm size and gross output</span></div></div><p style="margin-top: var(--space-4);">Commercial-scale groups have greater total and per-farm output, while the smallholder group has the highest derived per-hectare rate. The project cautions that this ratio alone does not establish greater efficiency. These are simulated data patterns, not causal or field conclusions.</p></section>
+    <section id="visuals" class="container case-section"><div class="section-header"><span class="section-header__eyebrow">Excel dashboard</span><h2>Selected views</h2></div><div class="grid grid--2 dashboard-gallery"><figure class="dashboard-figure"><img src="https://raw.githubusercontent.com/johnoe0710/crop-yield-of-a-farm/main/images/power-query-editor.png" alt="Power Query editor for the farm yield analysis"><figcaption>Data preparation in Power Query</figcaption></figure><figure class="dashboard-figure"><img src="https://raw.githubusercontent.com/johnoe0710/crop-yield-of-a-farm/main/images/correlation-check.png" alt="Correlation check for farm size and gross output"><figcaption>Farm-size correlation check</figcaption></figure></div></section>
+    <section id="limits" class="container case-section case-section--muted"><h2>Limitations &amp; availability</h2><p style="margin-top: var(--space-3);">The records are synthetic, contain no geographic or time context, and the interpretation of crop_yield as total output is an assumption. The analysis is descriptive; group cut points are analyst-defined. The public project repository currently provides documentation and screenshots but does not include the workbook or dataset.</p></section>
+    <section class="container case-section"><h2>Project repository</h2><p style="margin-top: var(--space-3);">The independent repository documents the assumptions, derived fields, results, and workbook workflow.</p><p style="margin-top: var(--space-4);"><a class="btn btn--primary" href="https://github.com/johnoe0710/crop-yield-of-a-farm" target="_blank" rel="noopener">View project on GitHub</a> <a class="btn btn--secondary" data-route="projects/">Back to all projects</a></p></section>
+  </main>
+  <footer class="site-footer" data-include="partials/footer.html"></footer>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agricultural Production Drivers Analysis | John O. Ezekiel</title>
+  <meta name="description" content="An Excel analysis of environmental and operational associations with farm output, with an explicit audit and limitations.">
+  <link rel="canonical" href="https://johnoe0710.github.io/john-o-ezekiel-website/projects/agricultural-production-drivers-analysis/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/tokens.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+  <header class="site-header" data-include="partials/header.html"></header>
+  <main>
+    <section class="case-hero"><div class="container case-hero__grid">
+      <div><span class="section-header__eyebrow">Agricultural systems · Excel · Audit</span><h1 style="margin-top: var(--space-2);">Agricultural Production Drivers Analysis</h1>
+        <p class="hero__tagline">An audited exploratory analysis of how farm size and environmental and operational variables are associated with total output in a 3,000-record farm dataset.</p>
+        <div class="case-meta"><span>Excel · PivotTables · Data Analysis ToolPak</span><span>3,000 farm-level observations</span></div>
+        <a class="btn btn--primary" href="https://github.com/johnoe0710/agricultural-production-drivers-analysis" target="_blank" rel="noopener">Open GitHub project</a></div>
+      <figure class="case-hero__media"><img src="https://raw.githubusercontent.com/johnoe0710/agricultural-production-drivers-analysis/main/visuals/agric_production_driver_analysis_dashboard.png" alt="Agricultural production drivers dashboard"></figure>
+    </div></section>
+    <div class="container case-nav-wrap"><nav aria-label="On this page" class="case-nav" style="margin-top: var(--space-6); padding: var(--space-4) var(--space-5); border-radius: var(--radius-sm);"><ul style="display: flex; flex-wrap: wrap; gap: var(--space-4); font-size: var(--fs-sm);"><li><a href="#overview">Overview</a></li><li><a href="#data">Data</a></li><li><a href="#approach">Approach</a></li><li><a href="#findings">Findings</a></li><li><a href="#visuals">Visuals</a></li><li><a href="#limits">Limitations</a></li></ul></nav></div>
+    <section id="overview" class="container case-section"><h2>Context &amp; objective</h2><p style="margin-top: var(--space-3);">The project investigates which environmental and operational factors are associated with farm output. It is an explanatory and exploratory analysis, not a validated predictive model, and it explicitly documents a correction to an earlier ratio-based interpretation.</p></section>
+    <section id="data" class="container case-section case-section--muted"><h2>Data context</h2><p style="margin-top: var(--space-3);">The analysis covers 3,000 observations and six base variables: rainfall, soil quality, farm size, sunlight, fertilizer, and crop yield. The dataset was originally found on Kaggle, but the specific listing could not be relocated; the raw data is not redistributed. The units for crop yield and the measurement periods for rainfall and sunlight are assumed, not confirmed.</p></section>
+    <section id="approach" class="container case-section"><h2>Analytical approach</h2><p style="margin-top: var(--space-3);">Excel Tables support data checks and feature preparation, followed by PivotTable exploration and a five-factor ordinary least-squares regression using the Data Analysis ToolPak. The documented validation gate checks residuals against each predictor. No train/test split or out-of-sample validation was performed.</p></section>
+    <section id="findings" class="container case-section case-section--muted"><div class="section-header"><span class="section-header__eyebrow">Dataset-level results</span><h2>Associations, not forecasts</h2></div><div class="kpi-grid"><div class="stat"><span class="stat__value">0.989</span><span class="stat__label">Correlation between farm size and total output</span></div><div class="stat"><span class="stat__value">99.9996%</span><span class="stat__label">Reported in-sample variance explained by the five-factor model</span></div><div class="stat"><span class="stat__value">3,000</span><span class="stat__label">Farm-level records analysed</span></div></div><p style="margin-top: var(--space-4);">Farm size is the strongest reported association; soil quality, fertilizer, rainfall, and sunlight are described as more modest positive associations. The exceptionally high in-sample fit is flagged by the project as a reason to suspect synthetic rather than field-collected data.</p></section>
+    <section id="visuals" class="container case-section"><div class="section-header"><span class="section-header__eyebrow">Excel outputs</span><h2>Dashboard and model views</h2></div><div class="grid grid--2 dashboard-gallery"><figure class="dashboard-figure"><img src="https://raw.githubusercontent.com/johnoe0710/agricultural-production-drivers-analysis/main/visuals/impact_coefficient.png" alt="Regression impact coefficient output"><figcaption>Regression coefficient view</figcaption></figure><figure class="dashboard-figure"><img src="https://raw.githubusercontent.com/johnoe0710/agricultural-production-drivers-analysis/main/visuals/yield%20against%20farm_size%20trends.png" alt="Yield and farm-size trend chart"><figcaption>Yield and farm-size trend</figcaption></figure></div></section>
+    <section id="limits" class="container case-section case-section--muted"><h2>Limitations &amp; availability</h2><p style="margin-top: var(--space-3);">The original dataset listing is unavailable and raw data is not redistributed. Units and measurement periods are unconfirmed. The model has no out-of-sample validation, and its in-sample fit is unusually high. Findings describe associations only and should not be interpreted as causal or predictive. The published repository currently contains documentation and screenshots but not the workbook or raw data.</p></section>
+    <section class="container case-section"><h2>Project repository</h2><p style="margin-top: var(--space-3);">The repository documents the analysis, audit history, data availability, and supporting visuals.</p><p style="margin-top: var(--space-4);"><a class="btn btn--primary" href="https://github.com/johnoe0710/agricultural-production-drivers-analysis" target="_blank" rel="noopener">View project on GitHub</a> <a class="btn btn--secondary" data-route="projects/">Back to all projects</a></p></section>
+  </main>
+  <footer class="site-footer" data-include="partials/footer.html"></footer>
+  <script src="../../js/main.js"></script>
+</body>
+</html>
